@@ -1,0 +1,203 @@
+generated: '2026-08-04'
+method: searched
+source: npm registry search of the @getjerry scope + github.com/getjerry
+summary:
+  api_client_sdks: 0
+  first_party_packages: 18
+  registries: [npm]
+  note: >-
+    IMPORTANT — none of these are API client libraries. Jerry publishes no public
+    API, so it ships no SDK for one. Everything below is internal engineering
+    tooling that Jerry publishes openly: shared lint/format/tsconfig presets, a
+    fork of the serverless-next.js deployment components, and small utility
+    forks. Because there is no official client library for a Jerry API, NO
+    `SDKs` pointer is wired into apis.yml — emitting one would misreport the
+    ergonomics `sdk_count` check. `Packages` is the correct and only pointer.
+packages:
+- language: typescript
+  registry: npm
+  name: '@getjerry/eslint-config'
+  url: https://www.npmjs.com/package/@getjerry/eslint-config
+  install: pnpm i -D eslint @getjerry/eslint-config
+  version: 0.26.1
+  published: '2026-07-09'
+  official: true
+  api_client: false
+  category: engineering-standards
+- language: typescript
+  registry: npm
+  name: '@getjerry/tsconfig'
+  url: https://www.npmjs.com/package/@getjerry/tsconfig
+  install: pnpm i -D typescript @getjerry/tsconfig
+  version: 0.26.1
+  published: '2026-07-09'
+  official: true
+  api_client: false
+  category: engineering-standards
+- language: typescript
+  registry: npm
+  name: '@getjerry/prettier-config'
+  url: https://www.npmjs.com/package/@getjerry/prettier-config
+  install: pnpm i -D prettier @getjerry/prettier-config
+  version: 0.26.1
+  published: '2026-07-09'
+  official: true
+  api_client: false
+  category: engineering-standards
+- language: typescript
+  registry: npm
+  name: '@getjerry/oxfmt-config'
+  url: https://www.npmjs.com/package/@getjerry/oxfmt-config
+  install: pnpm i -D @getjerry/oxfmt-config
+  version: 0.26.1
+  published: '2026-07-09'
+  official: true
+  api_client: false
+  category: engineering-standards
+- language: typescript
+  registry: npm
+  name: '@getjerry/serverless-next'
+  url: https://www.npmjs.com/package/@getjerry/serverless-next
+  install: npm install @getjerry/serverless-next
+  version: 2.8.3
+  published: '2022-11-29'
+  official: true
+  api_client: false
+  category: infrastructure
+  source: https://github.com/getjerry/serverless-next.js
+- language: typescript
+  registry: npm
+  name: '@getjerry/lambda-at-edge'
+  url: https://www.npmjs.com/package/@getjerry/lambda-at-edge
+  version: 1.19.1
+  published: '2022-11-29'
+  official: true
+  api_client: false
+  category: infrastructure
+- language: typescript
+  registry: npm
+  name: '@getjerry/serverless-component'
+  url: https://www.npmjs.com/package/@getjerry/serverless-component
+  version: 1.17.0
+  published: '2020-09-08'
+  official: true
+  api_client: false
+  category: infrastructure
+- language: typescript
+  registry: npm
+  name: '@getjerry/aws-lambda'
+  url: https://www.npmjs.com/package/@getjerry/aws-lambda
+  version: 1.9.3
+  published: '2022-11-29'
+  official: true
+  api_client: false
+  category: infrastructure
+- language: typescript
+  registry: npm
+  name: '@getjerry/aws-cloudfront'
+  url: https://www.npmjs.com/package/@getjerry/aws-cloudfront
+  version: 1.7.0
+  published: '2022-11-25'
+  official: true
+  api_client: false
+  category: infrastructure
+- language: typescript
+  registry: npm
+  name: '@getjerry/cloudfront'
+  url: https://www.npmjs.com/package/@getjerry/cloudfront
+  version: 2.6.0
+  published: '2022-11-25'
+  official: true
+  api_client: false
+  category: infrastructure
+- language: typescript
+  registry: npm
+  name: '@getjerry/aws-iam-role'
+  url: https://www.npmjs.com/package/@getjerry/aws-iam-role
+  version: 1.1.12
+  published: '2022-01-07'
+  official: true
+  api_client: false
+  category: infrastructure
+- language: typescript
+  registry: npm
+  name: '@getjerry/domain'
+  url: https://www.npmjs.com/package/@getjerry/domain
+  version: 1.6.0
+  published: '2022-11-25'
+  official: true
+  api_client: false
+  category: infrastructure
+- language: typescript
+  registry: npm
+  name: '@getjerry/s3-static-assets'
+  url: https://www.npmjs.com/package/@getjerry/s3-static-assets
+  version: 1.7.1
+  published: '2022-11-25'
+  official: true
+  api_client: false
+  category: infrastructure
+- language: typescript
+  registry: npm
+  name: '@getjerry/next-aws-lambda'
+  url: https://www.npmjs.com/package/@getjerry/next-aws-lambda
+  version: 2.6.14
+  published: '2022-01-07'
+  official: true
+  api_client: false
+  category: infrastructure
+- language: typescript
+  registry: npm
+  name: '@getjerry/next-aws-cloudfront'
+  url: https://www.npmjs.com/package/@getjerry/next-aws-cloudfront
+  version: 1.7.10
+  published: '2022-01-07'
+  official: true
+  api_client: false
+  category: infrastructure
+- language: javascript
+  registry: npm
+  name: '@getjerry/debug'
+  url: https://www.npmjs.com/package/@getjerry/debug
+  version: 4.3.8
+  published: '2024-03-27'
+  official: true
+  api_client: false
+  category: utility
+  source: https://github.com/getjerry/debug
+- language: javascript
+  registry: npm
+  name: '@getjerry/marksy-lite'
+  url: https://www.npmjs.com/package/@getjerry/marksy-lite
+  version: 8.1.14
+  published: '2021-09-15'
+  official: true
+  api_client: false
+  category: utility
+- language: typescript
+  registry: npm
+  name: nest-casl
+  url: https://www.npmjs.com/package/nest-casl
+  install: npm install nest-casl
+  version: 1.9.15
+  official: true
+  api_client: false
+  category: utility
+  source: https://github.com/getjerry/nest-casl
+  note: Unscoped, but published from and maintained in the getjerry GitHub org — CASL
+    authorization integration for NestJS.
+github:
+  org: https://github.com/getjerry
+  public_repos: 32
+  original_repos: 10
+  note: >-
+    The public org is mostly forks of open-source projects (kong, material-ui,
+    eslint-plugin-react, stripe-react-native, react-native-scrollable-tab-view).
+    The originals are CI actions, the nest-casl library, and the upptime status
+    page that backs status.jerry.ai.
+x-evidence:
+  fetched: '2026-08-04'
+  sources:
+  - https://registry.npmjs.org/-/v1/search?text=@getjerry
+  - https://api.github.com/orgs/getjerry/repos
+  pypi_probe: {url: 'https://pypi.org/pypi/jerry/json', http_status: 404}

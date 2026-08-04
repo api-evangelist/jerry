@@ -1,0 +1,55 @@
+generated: '2026-08-04'
+method: searched
+source: https://status.jerry.ai/ + https://github.com/getjerry/upptime
+versioning:
+  scheme: null
+  current: null
+  docs: null
+  note: >-
+    No public API, so no API versioning scheme is published. Consumer-facing
+    versioning happens through the iOS and Android app stores.
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: No deprecation or sunset policy is published — there is no public API contract
+    to deprecate.
+sla:
+  url: null
+  uptime_target: null
+  note: >-
+    No published SLA or uptime commitment. The status page reports observed uptime
+    but states no target.
+status_page: https://status.jerry.ai/
+status_page_detail:
+  platform: Upptime
+  hosting: GitHub Pages (getjerry.github.io), CNAME status.jerry.ai
+  source_repo: https://github.com/getjerry/upptime
+  config: https://raw.githubusercontent.com/getjerry/upptime/master/.upptimerc.yml
+  self_hosted: true
+  incident_channel: GitHub Issues on getjerry/upptime
+  history: Uptime history and response-time graphs committed to the public repo
+  monitored_endpoints:
+  - name: Homepage
+    url: https://jerry.ai
+  - name: Insurance System
+    url: https://jerry.ai/health
+    probed_status: 200
+    probed_body: 'OK'
+  note: >-
+    The status page monitors two checks only — the marketing homepage and a single
+    `/health` liveness endpoint for the insurance system. It is a public liveness
+    signal, not a component-level service status board.
+changelog: null
+deprecated_operations: []
+terms:
+  terms_of_use: https://jerry.ai/terms-of-use/
+  terms_updated: '2024-01-17'
+  privacy_policy: https://jerry.ai/privacy-policy/
+  privacy_updated: '2026-07-20'
+x-evidence:
+  fetched: '2026-08-04'
+  probes:
+  - {url: 'https://status.jerry.ai/', http_status: 200, title: Jerry Status}
+  - {url: 'https://jerry.ai/health', http_status: 200, body: OK}
+  - {url: 'https://raw.githubusercontent.com/getjerry/upptime/master/.upptimerc.yml',
+    http_status: 200}

@@ -1,17 +1,40 @@
 aid: jerry
 name: Jerry
-description: 'Jerry is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Jerry (Jerry Services, Inc. / Jerry Insurance Agency, LLC) is a Palo
+  Alto, California based AI-powered car ownership super app and the largest digital
+  car insurance broker in the United States, licensed as an insurance producer in all
+  50 states and the District of Columbia. Through its iOS and Android apps and jerry.ai,
+  Jerry compares real car, home, renters and motorcycle insurance quotes from 100+
+  carriers, surfaces applicable discounts, and handles buying, bundling, switching
+  and cancelling policies end to end. Beyond insurance the app bundles auto refinancing,
+  the GarageGuard repair-cost and maintenance toolset, PriceProtect rate monitoring,
+  and the phone-sensor DriveShield telematics safe-driving program. Founded in 2017
+  by Art Agrawal, Lina Zhang and Musawir Shah, Jerry serves more than five million
+  customers. Jerry publishes no public developer API, developer portal or machine-readable
+  API contract; its public machine-readable surface is limited to an OpenID Connect
+  discovery document, a published llms.txt, a Content Signals declaration in robots.txt,
+  an Upptime-backed status page and a Vanta trust center.'
 url: https://raw.githubusercontent.com/api-evangelist/jerry/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pipeline
 specificationVersion: '0.20'
 created: '2026-08-04'
 modified: '2026-08-04'
+image: https://jerry.ai/imgs/icon-app.png
 tags:
 - Company
+- Insurance
+- InsurTech
+- Auto Insurance
+- Insurance Broker
+- Automotive
+- Consumer Finance
+- Lending
+- Telematics
+- Mobile Applications
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +43,82 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://jerry.ai/
+- type: SecondaryMarket
   url: https://forgeglobal.com/jerry_stock/
+- type: HowItWorks
+  url: https://jerry.ai/how-jerry-works/
+- type: Support
+  url: https://jerry.ai/contact/
+- type: HelpCenter
+  url: https://jerry.ai/faq/
+- type: Blog
+  url: https://jerry.ai/resources/
+- type: News
+  url: https://jerry.ai/news/
+- type: GitHubOrganization
+  url: https://github.com/getjerry
+- type: SignUp
+  url: https://jerry.ai/signup
+- type: TermsOfService
+  url: https://jerry.ai/terms-of-use/
+- type: PrivacyPolicy
+  url: https://jerry.ai/privacy-policy/
+- type: StatusPage
+  url: https://status.jerry.ai/
+- type: TrustCenter
+  url: https://trust.jerry.ai/
+- type: Compliance
+  url: https://jerry.ai/insurance-licenses/
+- type: Careers
+  url: https://jerry.ai/careers/
+- type: Team
+  url: https://jerry.ai/team/
+- type: Investors
+  url: https://jerry.ai/investors/
+- type: Partners
+  url: https://jerry.ai/affiliate/
+- type: iOSApp
+  url: https://apps.apple.com/us/app/jerry-insurance-car-care/id1258315950
+- type: AndroidApp
+  url: https://play.google.com/store/apps/details?id=com.jerrym
+- type: LLMsTxt
+  url: llms/jerry-llms.txt
+- type: WellKnown
+  url: well-known/jerry-well-known.yml
+- type: ContentSignal
+  url: https://jerry.ai/robots.txt
+- type: Authentication
+  url: authentication/jerry-authentication.yml
+- type: Conformance
+  url: conformance/jerry-conformance.yml
+- type: Lifecycle
+  url: lifecycle/jerry-lifecycle.yml
+- type: DomainSecurity
+  url: security/jerry-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/jerry-vulnerability-disclosure.yml
+- type: Packages
+  url: packages/jerry-packages.yml
+x-enrichment:
+  date: '2026-08-04'
+  status: enriched
+  artifacts_added: 11
+  pass: local-v1
+x-no-api-surface:
+  confirmed: '2026-08-04'
+  summary: >-
+    Jerry publishes no public developer API, developer portal, API documentation
+    or machine-readable API contract. Contract discovery ran the full STEP 0b
+    sweep — REST OpenAPI paths on every host root, GraphQL introspection, MCP
+    tools/list, and both A2A agent-card well-known paths — and every probe
+    missed. This is a confirmed negative, not an unfinished pass.
+  probed_hosts: [jerry.ai, www.jerry.ai, getjerry.com, app.jerry.ai, status.jerry.ai,
+    trust.jerry.ai, api.jerry.ai, api.getjerry.com, developer.jerry.ai, docs.jerry.ai]
+  machine_readable_surface_found:
+  - OpenID Connect discovery document + JWKS (getjerry.com)
+  - llms.txt (SEO-generated)
+  - Content Signals declaration in robots.txt
+  - Upptime status page with public uptime history
+  - Vanta trust center
+  partner_channel: https://jerry.ai/contact/

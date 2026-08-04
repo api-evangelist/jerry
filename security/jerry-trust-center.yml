@@ -1,0 +1,42 @@
+generated: '2026-08-04'
+method: probed
+probe: true
+url: https://trust.jerry.ai/
+platform: Vanta Trust Center
+verified: true
+certifications: []
+certifications_note: >-
+  The trust center is confirmed live and is genuinely Jerry's — it resolves via
+  CNAME to Vanta (608b03e38041cfc516961f48.cname.vantatrust.com), carries
+  `<link rel="canonical" href="https://trust.jerry.ai">`, and the document title
+  is "Jerry, Inc. Trust Center". The page body is client-rendered by Vanta's
+  React bundle, so the served HTML is a 5.5KB shell containing no framework or
+  certification names. NO certifications are recorded here because none were
+  observed in a fetched response — recording SOC 2 / ISO 27001 without seeing
+  them would be fabrication. Named certifications require a JavaScript render or
+  an authenticated Vanta request and remain an open enrichment gap.
+evidence:
+- source: https://trust.jerry.ai/
+  http_status: 200
+  content_type: text/html
+  title: Jerry, Inc. Trust Center
+  canonical: https://trust.jerry.ai
+  cname: 608b03e38041cfc516961f48.cname.vantatrust.com
+  vanta_slug_id: lxkt8itlc4ptbgq2lc861p
+  rendered: false
+  body_bytes: 5553
+- source: https://trust.getjerry.com/
+  dns: 608b03e38041cfc516961f48.cname.vantatrust.com
+  http_status: 0
+  note: Same Vanta CNAME target but no TLS certificate for this name; trust.jerry.ai
+    is the served hostname.
+regulatory:
+  note: >-
+    Jerry's public compliance posture is licensing rather than certification.
+    Jerry Insurance Agency, LLC is a licensed insurance producer in all 50 US
+    states and the District of Columbia; the state-by-state license register is
+    published.
+  licenses_page: https://jerry.ai/insurance-licenses/
+x-evidence:
+  fetched: '2026-08-04'
+  method: HTTP GET, no credentials, no JavaScript execution

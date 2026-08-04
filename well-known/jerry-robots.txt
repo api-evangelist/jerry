@@ -1,0 +1,15 @@
+User-agent: *
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+Disallow: /admin
+Disallow: /cms
+Disallow: /index3
+Disallow: /index4
+Disallow: /invite/
+Disallow: /login
+Disallow: /social
+Disallow: /stpst
+Disallow: /tag
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+Sitemap: https://jerry.ai/sitemap_index.xml

@@ -1,0 +1,84 @@
+generated: '2026-08-04'
+method: probed
+source: live DNS/TLS/HTTP probes of every Jerry host reachable from apis.yml
+hosts:
+- host: jerry.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Mar  1 23:59:59 2027 GMT
+  hsts: true
+  hsts_max_age: 31536000
+  hsts_include_subdomains: true
+  hsts_preload: true
+- host: getjerry.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Mar  1 23:59:59 2027 GMT
+  hsts: true
+  hsts_max_age: 31536000
+  hsts_include_subdomains: true
+  hsts_preload: true
+  note: 301-redirects to jerry.ai for site paths, but is the OIDC `issuer` value and
+    serves /.well-known/openid-configuration and /.well-known/jwks.json.
+- host: status.jerry.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 25 00:34:48 2026 GMT
+  hsts: false
+  note: GitHub Pages (getjerry.github.io) — no HSTS header served.
+- host: trust.jerry.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 21 16:15:27 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+  hsts_include_subdomains: true
+  hsts_preload: false
+  note: Vanta-hosted trust center (CNAME to cname.vantatrust.com).
+domains:
+- domain: jerry.ai
+  dnssec: true
+  caa:
+  - 0 issue "amazontrust.com"
+  - 0 issue "awstrust.com"
+  - 0 issue "letsencrypt.org"
+  - 0 issue "pki.goog"
+  - 0 issue "sectigo.com"
+  - 0 iodef "mailto:security@getjerry.com"
+  spf: true
+  spf_record: v=spf1 include:sendgrid.net include:_spf.google.com ~all
+  dmarc: true
+  dmarc_policy: quarantine
+  dmarc_pct: 100
+  dmarc_rua: mailto:dmarc-reports@jerry.ai
+- domain: getjerry.com
+  dnssec: true
+  caa:
+  - 0 issue "amazon.com"
+  - 0 issue "amazonaws.com"
+  - 0 issue "amazontrust.com"
+  - 0 issue "awstrust.com"
+  - 0 issue "letsencrypt.org"
+  - 0 issue "pki.goog"
+  - 0 issue "sectigo.com"
+  - 0 iodef "mailto:security@getjerry.com"
+  spf: true
+  spf_record: v=spf1 include:sendgrid.net include:_spf.google.com ~all
+  dmarc: true
+  dmarc_policy: quarantine
+  dmarc_pct: 100
+  dmarc_rua: mailto:dmarc-reports@getjerry.com
+summary:
+  strong:
+  - DNSSEC signed on both registrable domains
+  - HSTS with includeSubDomains and preload on both apex domains
+  - TLS 1.3 everywhere with valid chains
+  - CAA issue restrictions plus an iodef incident-reporting address
+  - SPF and enforced DMARC on both domains
+  gaps:
+  - DMARC policy is p=quarantine, not p=reject
+  - No HSTS on the status.jerry.ai GitHub Pages host
+  - No /.well-known/security.txt on any host (see jerry-vulnerability-disclosure.yml)
+x-evidence:
+  fetched: '2026-08-04'
+  method: dig (DS/CAA/TXT) + openssl s_client + HTTP HEAD

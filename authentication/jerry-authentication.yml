@@ -1,0 +1,50 @@
+generated: '2026-08-04'
+method: probed
+source: https://getjerry.com/.well-known/openid-configuration
+docs: null
+summary:
+  types: [openIdConnect]
+  api_key_in: []
+  oauth2_flows: []
+  public_api: false
+  note: >-
+    Jerry publishes no public developer API and no developer authentication
+    documentation. This profile is derived entirely from the one authentication
+    artifact Jerry actually serves anonymously: an OpenID Connect discovery
+    document. It describes how Jerry's own first-party clients verify identity
+    tokens; it is not an authorization server third parties can register with.
+schemes:
+- name: OpenIDConnect
+  type: openIdConnect
+  openIdConnectUrl: https://getjerry.com/.well-known/openid-configuration
+  sources: [well-known/jerry-openid-configuration.json]
+  issuer: https://getjerry.com
+  jwks_uri: https://getjerry.com/.well-known/jwks.json
+  response_types_supported: [id_token]
+  subject_types_supported: [public]
+  id_token_signing_alg_values_supported: [RS256]
+  discovery_completeness: minimal
+  missing_from_discovery:
+  - authorization_endpoint
+  - token_endpoint
+  - userinfo_endpoint
+  - registration_endpoint
+  - scopes_supported
+  - grant_types_supported
+  - claims_supported
+  - code_challenge_methods_supported
+  interpretation: >-
+    Only the implicit `id_token` response type is advertised and no token or
+    authorization endpoint is published, so no authorization-code + PKCE flow is
+    discoverable. There is no third-party client registration path and no scope
+    vocabulary, so `scopes/` is intentionally not emitted for this provider.
+gaps:
+- No developer portal, API reference or authentication documentation is published.
+- No API keys, bearer-token, or OAuth 2.0 client credentials surface is documented.
+- Discovery omits authorization_endpoint / token_endpoint, so the OIDC document is
+  not usable by a third-party relying party as published.
+x-evidence:
+  fetched: '2026-08-04'
+  url: https://getjerry.com/.well-known/openid-configuration
+  http_status: 200
+  content_type: application/json; charset=utf-8
