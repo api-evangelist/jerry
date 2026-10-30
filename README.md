@@ -64,5 +64,91 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Jerry is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/jerry_stock/
+Jerry (Jerry Services, Inc. / Jerry Insurance Agency, LLC) is a Palo Alto, California based AI-powered car ownership super app and the largest digital car insurance broker in the United States, licensed as an insurance producer in all 50 states and the District of Columbia. Through its iOS and Android apps and jerry.ai, Jerry compares real car, home, renters and motorcycle insurance quotes from 100+ carriers, surfaces applicable discounts, and handles buying, bundling, switching and cancelling policies end to end. Beyond insurance the app bundles auto refinancing, the GarageGuard repair-cost and maintenance toolset, PriceProtect rate monitoring, and the phone-sensor DriveShield telematics safe-driving program. Founded in 2017 by Art Agrawal, Lina Zhang and Musawir Shah, Jerry serves more than five million customers. Jerry publishes no public developer API, developer portal or machine-readable API contract; its public machine-readable surface is limited to an OpenID Connect discovery document, a published llms.txt, a Content Signals declaration in robots.txt, an Upptime-backed status page and a Vanta trust center.
+
+**Areas:** Company · Insurance · Insurtech · Auto Insurance · Insurance Broker · Automotive · Consumer Finance · Lending · Telematics · Mobile App · Artificial Intelligence
+
+## Jerry on APIs.io
+
+Everything profiled for Jerry is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/jerry/](https://apis.io/providers/jerry/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Jerry Authentication](https://apis.io/security/jerry/jerry-authentication/)
+- [Jerry Domain Security](https://apis.io/security/jerry/jerry-domain-security/)
+- [Jerry Trust Center](https://apis.io/security/jerry/jerry-trust-center/)
+- [Jerry Vulnerability Disclosure](https://apis.io/security/jerry/jerry-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://jerry.ai/)
+- [Sign up](https://jerry.ai/signup)
+- [Support](https://jerry.ai/contact/)
+- [Blog](https://jerry.ai/resources/)
+- [Compliance](https://jerry.ai/insurance-licenses/)
+- [Trust centre](https://trust.jerry.ai/)
+- [Terms of service](https://jerry.ai/terms-of-use/)
+- [Privacy policy](https://jerry.ai/privacy-policy/)
+- [GitHub](https://github.com/getjerry)
+- [Status](https://status.jerry.ai/)
+
+## API Evangelist rating
+
+**Kin Score 26.8** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 50.0 |
+
+**Agent readiness 4.7** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | yes |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 35.2** — Insurance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/jerry/](https://apis.io/providers/jerry/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Jerry: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/jerry/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
